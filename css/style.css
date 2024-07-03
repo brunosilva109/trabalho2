@@ -1,0 +1,293 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1E88E5; 
+  color: #fff; 
+  padding: 20px;
+}
+
+.menu-left, .menu-center, .menu-right {
+  flex: 1;
+}
+
+.logo-img {
+  width: 50px; 
+}
+
+.site-title {
+  font-size: 1.5em; 
+}
+
+.menu-items {
+  list-style-type: none;
+}
+
+.menu-items li {
+  display: inline;
+  margin-right: 20px; 
+}
+
+.menu-items li:last-child {
+  margin-right: 0; 
+}
+
+.menu-items li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.main-content {
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1E88E5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1565C0;
+}
+
+
+.footer {
+  background-color: #1E88E5; 
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info, .social-media, .store-address {
+  flex: 1;
+}
+
+.store-address {
+  text-align: right;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.form fieldset {
+  border: none;
+}
+
+.form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="password"],
+.form input[type="date"],
+.form button,
+.form label {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+.form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 600px) {
+  .form {
+    padding: 10px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+}
+
+.main-content {
+  flex: 1; 
+}
+
+
+.footer {
+  padding: 20px;
+  margin-top: auto; 
+}
+.conservation-projects,
+.turtle-conservation-projects {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.conservation-projects h2,
+.turtle-conservation-projects h2 {
+  font-size: 24px;
+  color: #006666;
+  margin-bottom: 10px;
+}
+
+
+.conservation-projects h3,
+.turtle-conservation-projects h3 {
+  font-size: 20px;
+  color: #006666;
+  margin-top: 20px;
+}
+.conservation-projects p,
+.turtle-conservation-projects p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.conservation-projects ul,
+.turtle-conservation-projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.conservation-projects li,
+.turtle-conservation-projects li {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.conservation-projects,
+.turtle-conservation-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+ /* Estilo do carrossel */
+ .carousel-container {
+  max-width: 400px; 
+  margin: 0 auto; 
+  overflow: hidden; 
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  margin: 0 auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth; 
+  width: 40%; 
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.carousel-item img {
+  width: 70%;
+  height: auto;
+}
+/* Estilos para a galeria */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.gallery-item {
+  flex: 0 0 calc(33.333% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+.gallery-item img {
+  max-width: 400px; 
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+.caption {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.caption h3, .caption p {
+  margin: 5px 0;
+}
+
+
