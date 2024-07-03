@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Salvar Tartarugas</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="menu">
+      <div class="menu-left">
+        <img src="../img/icone.png" alt="Logo" class="logo-img">
+      </div>
+      <div class="menu-center">
+        <h1 class="site-title">Salvar as Tartarugas</h1>
+      </div>
+      <div class="menu-right">
+        <nav>
+          <ul class="menu-items">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="formulario.html">Registro</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <main class="main-content">
+    <form class="form">
+      <fieldset>
+        <h1>Registro</h1>
+        <legend>Informações de Conta</legend>
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="fullname">Nome Real:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="phone">Número de Telefone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm_password">Confirmar Senha:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+
+        <label for="birthdate">Data de Nascimento:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label for="terms">Aceitar Termos: <input type="checkbox" id="terms" name="terms" required></label>
+        
+        <label for="receive_info">Receber Informações do Site: <input type="checkbox" id="receive_info" name="receive_info"></label>
+        <button type="submit" class="corlink">Registrar-se</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h2>Dados de Contato</h2>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Email: contato@salvartartarugas.com</p>
+      </div>
+      <div class="social-media">
+        <h2>Redes Sociais</h2>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="store-address">
+        <h2>Endereço</h2>
+        <p>Rua das Tartarugas, 123</p>
+        <p>Cidade da Praia, Ilha das Tartarugas</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
